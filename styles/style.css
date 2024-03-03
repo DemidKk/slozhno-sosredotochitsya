@@ -6,14 +6,30 @@
   position: relative;
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
-  object-fit: cover;
+  background-size: cover;
   background-attachment: fixed;
   padding: 0 10px;
 }
 
+.link {
+  text-shadow: 1px 1px var(--accent-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:focus {
+  outline: 1px solid var(--main-text-color);
+}
+
 .header {
   display: grid;
+  grid-template-rows: repeat(5, 1fr 1fr min-content 1fr 1fr);
   height: 100vh;
+  min-height: 668px;
   padding: 10px 0 ;
 } 
 
@@ -44,6 +60,8 @@
 
 .right-corner {
   position: absolute;
+  top: 10px;
+  right: 10px;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--corner-color);
@@ -57,12 +75,14 @@
 }
 
 .header__theme-menu-list {
+  display: grid;
+  align-content: center;
   list-style: none;
 }
 
 .header__theme-menu-button {
   background-color: transparent;
-  color: var(--section-title-color);
+  color: var(--button-color);
   font-family: var(--main-font);
   font-size: 18px;
   font-style: normal;
@@ -71,6 +91,21 @@
   border: transparent;
   text-transform: lowercase;
   margin-block-end: 13px;
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--accent-color-hover)
+}
+
+.header__theme-menu-button:focus {
+  outline: transparent;
+  border-bottom: 1px solid var(--button-color);
 }
 
 .header__title {
@@ -179,9 +214,11 @@
   object-position: center;
 }
 .footer {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   padding: 10px;
 }
 
@@ -194,6 +231,31 @@
   font-weight: 700;
   line-height: 82.5%;
   place-self: center;
+  }
+
+/* Декоративные уголки */
+
+/* Правый верхний */
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid var(--corner-color);
+    border-right: 1px solid var(--corner-color);
+  }
+/* Нижний левый */
+  .footer::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-left: 1px solid var(--corner-color);
+    border-bottom: 1px solid var(--corner-color);
+    bottom: 10px;
+    left: 0px;
   }
 
   @media (width >= 768px) {
@@ -215,7 +277,7 @@
       grid-row:  1/6;
       
     }
-    .first-section__subtitle {
+    .specific-section__subtitle {
       margin-block-start: 50px;
     }
     .section__pics-template {
@@ -242,7 +304,6 @@
   .header__theme-menu {
     grid-row: 1/2;
     justify-self: center;
-    margin-block: 0 26.807vw;
   }
   .header__theme-menu-list {
     display: flex;
