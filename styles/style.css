@@ -148,6 +148,7 @@
   line-height: 130%;
   inline-size: clamp(355px, 47.46vw, 491px);
   align-self: center;
+  justify-self: end;
 }
 
 .title-decor {
@@ -264,6 +265,10 @@
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  }
+
+  .section {
+    margin-block-end: 30px;
   }
 
   .section-transformer {
