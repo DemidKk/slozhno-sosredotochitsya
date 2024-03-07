@@ -272,7 +272,7 @@
   }
 
   .section-transformer {
-    grid-template-columns: 32% 1fr; 
+    grid-template-columns: 33% 1fr; 
     align-items: start;
   }
 
