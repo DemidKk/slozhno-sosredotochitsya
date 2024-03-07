@@ -147,9 +147,7 @@
   font-weight: 700;
   line-height: 130%;
   inline-size: clamp(355px, 47.46vw, 491px);
-  margin-block-start: 14.666vw;
-  margin-block-end: 27.6vw;
-  justify-self: end;
+  align-self: center;
 }
 
 .title-decor {
