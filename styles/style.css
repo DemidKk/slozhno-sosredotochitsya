@@ -117,7 +117,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--button-color);
   pointer-events: none;
 }
 
@@ -322,6 +322,10 @@
 }
     
 @media (width >= 1024px) {
+  .rec {
+    top:20px;
+  }
+  
   .header__theme-menu {
     justify-self: center;
     align-self: flex-start;
