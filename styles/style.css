@@ -247,6 +247,10 @@
   }
 
 @media (width >= 768px) {
+  .rec {
+    top:20px;
+  }
+
   .page {
     padding: 0 20px;
   }
@@ -272,7 +276,7 @@
   }
 
   .section-transformer {
-    grid-template-columns: 33% 1fr; 
+    grid-template-columns: 32% 1fr; 
     align-items: start;
   }
 
@@ -322,10 +326,6 @@
 }
     
 @media (width >= 1024px) {
-  .rec {
-    top:20px;
-  }
-  
   .header__theme-menu {
     justify-self: center;
     align-self: flex-start;
