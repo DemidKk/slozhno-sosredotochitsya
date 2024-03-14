@@ -259,6 +259,10 @@
     padding: 20px 0;
   }
 
+  .header__title {
+    margin-inline-start: -20px;
+  }
+
   .decorated-zone::before {
     top: 20px;
   }
@@ -346,11 +350,6 @@
 
   .header__theme-menu-button {
     margin: 0;
-  }
-
-  .header__subtitle {
-    margin-block-start: 11.133vw;
-    margin-block-end: 13.086vw;
   }
 
   .first-section__subtitle {
