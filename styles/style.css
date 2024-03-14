@@ -302,6 +302,7 @@
 
   .section__pics-title {
     margin-block-start: 60px;
+    margin-block-end: 20px;
   }
 
   .section__pics-template {
