@@ -19,3 +19,25 @@
   --main-text-color: #F1B2CE;
   --main-font: IBM Plex Mono, sans-serif;
   }
+
+  @media (prefers-color-scheme: light) {
+    .page.theme_dark {
+      --accent-color: #FF0070;
+      --corner-color: #FF0070;
+      --button-color: #FF0070;
+      --section-title-color:#FF0070;
+      --title-color: #DB00FF;
+      --subtitle-color: #000028;
+      --main-text-color: #F1B2CE;
+      --main-font: IBM Plex Mono, sans-serif;
+      --accent-color-hover: rgba(255, 0, 112, 0.4);
+      background-image: url(../images/cover-image-dark.png);
+
+    .rec {
+      display: grid;
+    }
+    .rec::after {
+      display: block;
+    }
+    }
+  }

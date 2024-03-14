@@ -276,8 +276,11 @@
   }
 
   .section-transformer {
-    grid-template-columns: 32% 1fr; 
+    grid-template-columns: 34% 1fr; 
     align-items: start;
+  }
+  .section-transformer .section__title {
+    padding-inline-end: 10px;
   }
 
   .section-transformer__content {
