@@ -289,6 +289,7 @@
 
   .section__title {
     grid-row:  1/6;
+    margin-block-start: 60px;
   }
 
   .title-short {
@@ -296,7 +297,11 @@
   }
   
   .specific-section__subtitle {
-    margin-block-start: 50px;
+    margin-block-start: 60px;
+  }
+
+  .section__pics-title {
+    margin-block-start: 60px;
   }
 
   .section__pics-template {
